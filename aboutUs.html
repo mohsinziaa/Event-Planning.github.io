@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadiWadi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Jost:wght@500&family=Lobster&family=Prompt:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: 'Jost', sans-serif;
+        }
+
+        #navbarScroll li a {
+            font-size: 1.3rem;
+            margin: 0px 30px;
+        }
+
+        #navbarScroll li a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: transparent;
+        }
+
+        body img {
+            width: 100%;
+            height: 1000px;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .outerContainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .inner-container {
+            margin-bottom: 30px;
+            font-size: 20px;
+            font-weight: 900;
+            text-align: center;
+
+        }
+
+        .membersInfo img {
+            height: 150px;
+            width: 150px;
+            border-radius: 60%;
+            position: relative;
+            top: 5px;
+            opacity: 1;
+        }
+
+        .membersInfo {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 10px;
+            width: 25%;
+            align-items: center;
+            height: 500px;
+            margin-top: 50px;
+        }
+
+
+        .membersInfo h3 {
+            font-weight: bold;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+        }
+
+        .membersInfo h5 {
+            position: relative;
+            top: 20px;
+            left: 6px;
+            font-size: 21px;
+        }
+
+        .membersInfo h4 {
+            position: relative;
+            top: 18px;
+            font-size: 25px;
+        }
+        
+
+        .membersInfo button {
+            background-color: black;
+            color: white;
+            width: 100%;
+            position: relative;
+            top: 20px;
+            padding: 10px 20px;
+            height: 42px;
+            border-radius: 20px;
+            margin-top: 30px;
+            transition: all 0.5s ease-in-out;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .membersInfo button:hover {
+            background: #4082f5;
+            color: black;
+            box-shadow: 0px 4px 35px -5px #4082f5;
+            cursor: pointer;
+        }
+
+        .vL1 {
+            border-left: 3px solid black;
+            height: 470px;
+            position: absolute;
+            left: 25%;
+            top: 400px;
+        }
+
+        .vL2 {
+            border-left: 3px solid black;
+            height: 470px;
+            position: absolute;
+            left: 50%;
+            top: 400px;
+        }
+
+        .vL3 {
+            border-left: 3px solid black;
+            height: 470px;
+            position: absolute;
+            left: 75%;
+            top: 400px;
+        }
+
+        .social-links {
+            margin: 14px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            transition: .4s;
+        }
+
+        .social-links a i {
+            color: black;
+        }
+
+
+        .social-links a:hover {
+            transform: scale(1.7);
+        }
+
+        .inner-container{
+            position: relative;
+            top: 20px;
+            text-align: center;
+            width: 80%;
+        }
+
+        .inner-container p,h1{
+            width: 100%;
+            position: relative;
+            left: 15%;
+            font-size: 1.4rem;
+            font-weight: normal;
+        }
+
+        .inner-container h1{
+            font-size: 2.3rem;
+            font-weight: bold;
+        }
+
+        .social-links{
+            margin: 10px;
+            /* padding: 0px; */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <img src="hallimage.jpg" alt="shadiHall.com" id="serviceBoxImg">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Book Hall</a></li>
+                            <li><a class="dropdown-item" href="#">Rent A Car</a></li>
+                            <li><a class="dropdown-item" href="#">Book A Hotel</a></li>
+                            <li><a class="dropdown-item" href="#">Hire A Photographer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    
+        <div class="inner-container ">
+            <h1>About Us</h1>
+            <p>
+                    Welcome to ShadiWadi. We’re in business to save your ticket to the market to plan your BIG DAY and
+                    an event.<br><br>
+
+                    We are the first ever alternative for your event bookings and shopping from the comfort of your
+                    couch. ShadiWadi focuses to ease the your life of not having to wander from shop to shop looking for
+                    venues and wedding halls.<br><br>
+                    
+                    ShadiWadi not only allows you to to book for your event by paperless exchange but hopes to provide
+                    you with services that will ease the event planning without having to travel by bringing the best
+                    enterprises to one platform. 
+                    
+                </p>
+            </div>
+            
+            <div class="outerContainer">
+            
+            <div class="membersInfo">
+                <h3>Our Team</h3>
+
+                <h4>Muhammad Abdullah</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-linkedin"></i> </a>
+                </div>
+
+                <h4>Mohsin Zia</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-linkedin"></i> </a>
+                </div>
+
+                <h4>Irtaza Haider</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-linkedin"></i> </a>
+                </div>
+                <h4>Zartaj Asim</h4>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-facebook"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-twitter"></i> </a>
+                    <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><i class="fa fa-linkedin"></i> </a>
+                </div>
+                <div class="vL1"></div>
+
+            </div>
+
+            <div class="membersInfo">
+                <h3>Our Mission</h3>
+                <h5>We are a passionate one-stop shop. Our mission is to be a customer-centric website to bring the best
+                    bookings and enterprises to your table from the comfort of your couch. <br><br>We are a novel event
+                    lookbook for your any event and let you have the freedom to book whenever you want from where-ever you
+                    want by bringing all the smaller enterprises to one platform and will make the process much smoother and
+                    easier. !
+                </h5>
+                <div class="vL2"></div>
+            </div>
+
+
+            <div class="membersInfo">
+                <h3>Our Goals</h3>
+                <h5>Our Goal is to give our customers the most compelling shopping experience possiblewith the
+                    essentials for their event.<br><br>We hope to Become the world’s number-one destination for planning and
+                    booking for an event.
+                    We hope to mot only help you connect with your dream team but will make sure to bring you options under
+                    your budget.
+                </h5>
+                <div class="vL3"></div>
+            </div>
+
+            <div class="membersInfo">
+                <h3>Our Vision</h3>
+                <h5>Our vision is to accelerate the world's transition to book and shop for their events online from the
+                    confort of their homes.<br><br>ShadiWadi aims to be Earth’s most customer-centric company, where
+                    customers
+                    can find and book anything they might want to buy online for their Big Day and for any event.We will
+                    take care of checking off the list for your weddings and any event.
+                </h5>
+                <div class="vL3"></div>
+            </div>
+
+        </div>

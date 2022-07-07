@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadiWadi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Jost:wght@500&family=Lobster&family=Prompt:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Jost', sans-serif;
+        }
+
+        #navbarScroll li a {
+            font-size: 1.3rem;
+            margin: 0px 30px;
+        }
+
+        #navbarScroll li a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: transparent;
+        }
+
+        .outerContainer img {
+            width: 100%;
+            height: 1000px;
+            position: absolute;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .outerContainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .membersInfo img {
+            height: 150px;
+            width: 150px;
+            border-radius: 60%;
+            position: relative;
+            top: 5px;
+            opacity: 1;
+        }
+
+        .membersInfo {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 10px;
+            width: 25%;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+        }
+
+
+        .membersInfo h3 {
+            font-weight: bold;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+        }
+
+        .membersInfo h5 {
+            position: relative;
+            top: 20px;
+            left: 6px;
+            font-size: 18px;
+        }
+
+        .membersInfo button {
+            background-color: black;
+            color: white;
+            width: 100%;
+            position: relative;
+            top: 20px;
+            padding: 10px 20px;
+            height: 42px;
+            border-radius: 20px;
+            margin-top: 30px;
+            transition: all 0.5s ease-in-out;
+            border: none;
+            text-transform: uppercase;
+        }
+
+        .membersInfo button:hover {
+            background: #4082f5;
+            color: black;
+            box-shadow: 0px 4px 35px -5px #4082f5;
+            cursor: pointer;
+        }
+
+        .vL1 {
+            border-left: 3px solid black;
+            height: 460px;
+            position: absolute;
+            left: 25%;
+            top: 105px;
+        }
+
+        .vL2 {
+            border-left: 3px solid black;
+            height: 460px;
+            position: absolute;
+            left: 50%;
+            top: 105px;
+        }
+
+        .vL3 {
+            border-left: 3px solid black;
+            height: 460px;
+            position: absolute;
+            left: 75%;
+            top: 105px;
+        }
+
+        .contacts {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            top: 40px;
+            left: 40%;
+        }
+
+        .contacts h2 {
+            font-weight: bold;
+            font-size: 1.7rem;
+            text-transform: uppercase;
+            position: relative;
+            right: 10%;
+        }
+
+        .items {
+            display: flex;
+            margin: 8px 0px;
+        }
+
+        .items img {
+            border-radius: 5%;
+            height: 40px;
+            width: 40px;
+        }
+
+        .items h3 {
+            position: relative;
+            top: 6px;
+            left: 10px;
+            font-size: 1.7rem;
+        }
+
+        .items a{
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contactUs.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Book Hall</a></li>
+                            <li><a class="dropdown-item" href="#">Rent A Car</a></li>
+                            <li><a class="dropdown-item" href="#">Book A Hotel</a></li>
+                            <li><a class="dropdown-item" href="#">Hire A Photographer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="outerContainer">
+        <img src="hallimage.jpg" alt="shadiHall.com" id="serviceBoxImg">
+
+        <div class="membersInfo">
+            <h3>Technical Support</h3>
+            <img src="mohsinImage.jpeg" alt="chatBot">
+            <h5>Already using our products and facing technical issues? Contact our technical staff head Mohsin Zia now!
+            </h5>
+            <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><button>Contact Now</button></a>
+            <div class="vL1"></div>
+        </div>
+
+
+        <div class="membersInfo">
+            <h3>Product Advice</h3>
+            <img src="abdullahImage.jpeg" alt="chatBot">
+            <h5>Are you confused in choosing a product of ours? Contact our product advisor Muhammad Abdullah now!
+            </h5>
+            <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><button>Contact Now</button></a>
+            <div class="vL2"></div>
+        </div>
+
+
+        <div class="membersInfo">
+            <h3>Pricing and Billing</h3>
+            <img src="irtazaImage.jpeg" alt="chatBot">
+            <h5>Are you worried about the prices of our products? Contact our financial department head Irtaza Haider now!
+            </h5>
+            <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><button>Contact Now</button></a>
+            <div class="vL3"></div>
+        </div>
+
+
+        <div class="membersInfo">
+            <h3>Details & Suggestions</h3>
+            <img src="zartajImage.jpeg" alt="chatBot">
+            <h5>Do you want to know details of any product or give suggestions? Contact our marketing department head Zartaj Asim now!
+            </h5>
+            <a href="https://www.linkedin.com/in/irtaza-haider-314331171/"><button>Contact Now</button></a>
+        </div>
+
+    </div>
+
+    <section class="contacts">
+        <h2>For Further Details You Can Contact Us Here!</h2>
+        <div class="items">
+            <img src="linkedIn.png" alt="">
+            <a href="">
+                <h3>LinkedIn</h3>
+            </a>
+        </div>
+
+        <div class="items">
+            <img src="gmail.png" alt="">
+            <a href="">
+                <h3>shadiWaadi@gmail.com</h3>
+            </a>
+        </div>
+
+        <div class="items">
+            <img src="phone.png" alt="">
+            <a href="">
+                <h3>+92 333 2602714</h3>
+            </a>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
